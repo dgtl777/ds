@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 14</title>
+    <style>
+        body{
+            background-color: skyblue;
+            text-align: center;
+        }
+        h1{
+            color: blue;
+        }
+        #data, #num, #one, #two, #myName{
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javascript Datatypes</h1>
+    </header>
+    <p id="myName"></p>
+    <p id="data"></p>
+    <p id="num"></p>
+    <p id="one"></p>
+    <p id="two"></p>
+</body>
+<script>
+    var data = "Delisha";
+    var num  = 5;
+    var point = 2 / 5;
+    var happy = true;
+    var garbage = undefined;
+    document.getElementById("myName").innerText = data;
+    document.getElementById("one").innerText = num;
+    document.getElementById("two").innerText = point;
+    document.getElementById("data").innerText = garbage;
+    document.getElementById("num").innerText = happy;
+</script>
+</html>
