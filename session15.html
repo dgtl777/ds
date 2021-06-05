@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 15</title>
+    <style>
+        body{
+            background-color: palevioletred;
+            text-align: center;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javascript User Input</h1>
+    </header>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button onclick="add()">Calculate</button>
+    <h2>Result</h2>
+    <h2 id="result"></h2>
+    
+</body>
+<script>
+    function add(){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var add = parseInt(num1) + parseInt(num2);
+        document.getElementById("result").innerText = add;
+    }
+</script>
+</html>
