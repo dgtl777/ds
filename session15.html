@@ -21,7 +21,8 @@
     </header>
     <input type="text" id="num1">
     <input type="text" id="num2">
-    <button onclick="add()">Calculate</button>
+    <button onclick="add()">ADD</button>
+    <button onclick="sub()">SUBTRACT</button>
     <h2>Result</h2>
     <h2 id="result"></h2>
     
@@ -32,6 +33,12 @@
         var num2 = document.getElementById("num2").value;
         var add = parseInt(num1) + parseInt(num2);
         document.getElementById("result").innerText = add;
+    }
+    function sub(){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var sub = parseInt(num1) - parseInt(num2);
+        document.getElementById("result").innerText = sub;
     }
 </script>
 </html>
