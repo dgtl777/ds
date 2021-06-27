@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 20</title>
+    <style>
+        body {
+            background-color: bisque;
+            text-align: center;
+        }
+
+        h1 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Javascript Window Objects</h1>
+    </header>
+    <h2>Browser Height</h2>
+    <h2 id="height"></h2>
+    <h2>Browser Width</h2>
+    <h2 id="width"></h2>
+    <h2>Href</h2>
+    <h2 id="href"></h2>
+    <h2>Path</h2>
+    <h2 id="path"></h2>
+    <button onclick="google()">Go To Google</button>
+    <button onclick="back()">Back</button>
+    <button onclick="next()">Next</button>
+
+</body>
+<script>
+    function back() {
+        window.history.back();
+    }
+    function next() {
+        window.history.forward();
+    }
+    document.getElementById("height").innerText =
+        window.innerHeight;
+    document.getElementById("width").innerText =
+        window.innerWidth;
+    document.getElementById("href").innerText =
+        window.location.href;
+    document.getElementById("path").innerText =
+        window.location.pathname;
+    function google() {
+        window.location.assign("https://www.google.com/");
+    }
+</script>
+
+</html>

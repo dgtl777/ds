@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 21</title>
+    <style>
+        body {
+            background-color: skyblue;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Validating Form Expressions</h1>
+    </header>
+
+    <input type="text" name="myName" id="myName" placeholder="Enter Name">
+    <input type="text" name="myPass" id="myPass" placeholder="Enter Password">
+    <button onclick="test()">Submit Form</button>
+    <h2>Result</h2>
+    <h2 id="result"></h2>
+    <h2 id="result2"></h2>
+
+</body>
+<script>
+    function test() {
+        myName = document.getElementById("myName").value;
+        myPass = document.getElementById("myPass").value;
+        document.getElementById("result").innerText =
+            myName;
+        if (myName == '') {
+            document.getElementById("result").innerText =
+                "Enter Name";
+        }
+        if (myPass.length < 8) {
+            document.getElementById("result2").innerText =
+                "Password must be 8 characters long";
+        }
+        else {
+            document.getElementById("result2").innerText =
+                "Password Entry Successful";
+        }
+
+    }
+
+
+</script>
+
+</html>
