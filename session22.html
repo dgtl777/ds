@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 22</title>
+    <style>
+        body {
+            background-color: skyblue;
+            text-align: center;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: auto;
+        }
+
+        #box:hover {
+            background-color: red;
+        }
+
+        #box:active {
+            background-color: blue;
+        }
+
+        h1:hover {
+            color: red;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        p::first-line {
+            color: red;
+        }
+
+        #students::before {
+            content: "Delisha and Skanda";
+        }
+
+        #water:after {
+            content: "water";
+        }
+
+        .first::first-letter {
+            font-size: 35px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pseudo classes and elements</h1>
+    </header>
+    <div id="box">
+
+    </div>
+    <p>Today is our 22nd session<br>
+        Today is Saturday</p>
+    <p id="students"> are studying web development</p>
+    <p id="water">Fish live in </p>
+    <p class="first">My laptop is low on charge<br>
+        Im Gonna charge it now</p>
+
+</body>
+
+</html>
